@@ -1,8 +1,21 @@
 
 
 <h2>to do form</h2>
-<form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+<form action="" [formGroup]="form" (ngSubmit)="createTask()">
     <input type="text" placeholder="Task title" formControlName = "title">
     <input type="text" placeholder="Task description" formControlName = "description">
-    <input type="text" placeholder="Task title" formControlName = "title">
+     <select formControlName="priority">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="Highlight">Highlight</option>
+  </select>
+
+  <select name="status" id="" formControlName="status">
+    <option value="pending">pending</option>
+    <option value="done">done</option>
+  </select>
+
+  <button type="submit">add</button>
+
+    <select name="" id=""></select>
 </form>

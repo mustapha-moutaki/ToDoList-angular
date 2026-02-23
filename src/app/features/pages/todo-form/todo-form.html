@@ -18,3 +18,16 @@
   <button type="submit">add</button>
 
 </form>
+
+
+<div>
+    <h3>Tasks list</h3>
+    
+    <div *ngFor="let task of tasks()">
+        <p>{{task.title}}</p>
+        <p>{{task.description}}</p>
+        <p>{{task.dueDate}}</p>
+        <p>{{task.status}}</p>
+        <p>{{task.priority}}</p>
+    </div>
+</div>
